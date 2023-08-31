@@ -20,41 +20,42 @@ class HomePage extends StatefulWidget {
   State<HomePage> createState() => _HomePageState();
 }
 
-
 class _HomePageState extends State<HomePage> {
-
   int? currentChoice;
 
-  int count=0;
+  int count = 0;
 
-  final myController=TextEditingController();
+  final myController = TextEditingController();
 
   @override
-  void dispose(){
+  void dispose() {
     myController.dispose();
     super.dispose();
-}
+  }
 
   List<String> choices = [];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: 
-      Center(
-        child: Column(
+      body: Center(
+          child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           const Padding(
-          padding: EdgeInsets.only(top:20.0),
-          child: Center(
-            child: Text('QuikPick',
-            style: TextStyle(fontSize: 60, fontWeight: FontWeight.bold,color: Colors.deepPurple,),
+            padding: EdgeInsets.only(top: 20.0),
+            child: Center(
+              child: Text(
+                'QuikPick',
+                style: TextStyle(
+                  fontSize: 60,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.deepPurple,
+                ),
+              ),
             ),
           ),
-        ),
-          if(currentChoice==null)
-            const Text('What are the options??'),
+          if (currentChoice == null) const Text('What are the options??'),
           if (currentChoice != null)
             Text(
               choices[currentChoice!],
@@ -62,8 +63,8 @@ class _HomePageState extends State<HomePage> {
               textAlign: TextAlign.center,
             )
           else
-             Padding(
-              padding: const EdgeInsets.symmetric(horizontal:70.0),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 70.0),
               child: TextField(
                 controller: myController,
                 decoration: const InputDecoration(
@@ -74,44 +75,46 @@ class _HomePageState extends State<HomePage> {
                 autocorrect: false,
               ),
             ),
-          if(currentChoice==null)
-            Text('Option count: $count'),
+          if (currentChoice == null) Text('Option count: $count'),
           const Padding(padding: EdgeInsets.only(bottom: 40.0)),
           if (currentChoice == null)
             TextButton(
                 style: TextButton.styleFrom(
                   backgroundColor: Colors.deepPurple,
                   foregroundColor: Colors.white,
-                  textStyle: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                  textStyle: const TextStyle(
+                      fontSize: 20, fontWeight: FontWeight.bold),
                 ),
                 onPressed: () {
                   addChoice(myController.text);
                 },
                 child: const Text('Add Option')),
-                const Padding(padding: EdgeInsets.only(bottom: 20.0)),
+          const Padding(padding: EdgeInsets.only(bottom: 20.0)),
           TextButton(
             style: TextButton.styleFrom(
-                backgroundColor: Colors.deepPurple,
-                foregroundColor: Colors.white,
-                textStyle: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-                ),
+              backgroundColor: Colors.deepPurple,
+              foregroundColor: Colors.white,
+              textStyle:
+                  const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+            ),
             onPressed: () {
               updateChoice();
             },
             child: const Text('Pick One'),
           ),
-            const Padding(padding: EdgeInsets.only(bottom: 20.0)),
+          const Padding(padding: EdgeInsets.only(bottom: 20.0)),
           if (currentChoice != null)
             TextButton(
-            style: TextButton.styleFrom(
+              style: TextButton.styleFrom(
                 backgroundColor: Colors.deepPurple,
                 foregroundColor: Colors.white,
-                textStyle: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-                ),
-            onPressed: () {
-              reset();
-            },
-            child: const Text('Reset'),
+                textStyle:
+                    const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              ),
+              onPressed: () {
+                reset();
+              },
+              child: const Text('Reset'),
             )
         ],
       )),
@@ -133,10 +136,10 @@ class _HomePageState extends State<HomePage> {
     });
   }
 
-  void reset(){
+  void reset() {
     setState(() {
-      currentChoice=null;
-      count=0;
+      currentChoice = null;
+      count = 0;
       choices.clear();
     });
   }
