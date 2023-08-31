@@ -40,10 +40,19 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-          child: Column(
+      body: 
+      Center(
+        child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
+          const Padding(
+          padding: EdgeInsets.only(top:20.0),
+          child: Center(
+            child: Text('QuikPick',
+            style: TextStyle(fontSize: 60, fontWeight: FontWeight.bold,color: Colors.deepPurple,),
+            ),
+          ),
+        ),
           if(currentChoice==null)
             const Text('What are the options??'),
           if (currentChoice != null)
