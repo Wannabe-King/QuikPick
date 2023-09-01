@@ -27,8 +27,11 @@ After Setup, Download this project and use the flutter run command. (Make sure y
 
 So make sure to run the APK(to directly run on mobile devices) and review the code, and give me some feedback 😊.
 
-**APK:** [Touch Me!](https://drive.google.com/file/d/1XvQi0bHNuhJqpXPt8zU0cQc9zSHnPKJH/view?usp=drive_link)
+**APK:** [Touch Me!](https://drive.google.com/file/d/1ppoZXc77gJI-ImL7ZDo61qVFivznSWdP/view?usp=drive_link)
 
 ## Demonstration:
+
+https://github.com/Wannabe-King/QuikPick/assets/97578019/f111a169-4c22-4f3a-8330-8342a96b5fc0
+
 
 
