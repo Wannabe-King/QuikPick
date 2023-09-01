@@ -3,7 +3,7 @@ First I want to thank [Loco Kilo](https://youtu.be/rR3mxe6qcmw?si=OLsjTKqn93q8if
 
 # QuikPick
 
-QuikPick is your go-to app for making quick and effortless decisions. When you're faced with choices and can't decide, let QuikPick do the work for you. It's your personal decision-making assistant, always at your fingertips.
+QuikPick is your go-to app for making quick and effortless decisions. When you're faced with choices and can't decide, let QuikPick do the work for you. It's your personal decision-making assistant, always at your fingertips.😎😎
 
 ## Features added
 - Custom Options by User
