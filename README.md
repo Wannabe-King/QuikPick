@@ -1,5 +1,5 @@
 ## Credit
-First I want to thank [Loco Kilo](https://youtu.be/rR3mxe6qcmw?si=OLsjTKqn93q8ifkv), from whom I got the base structure of this project. He has made an amazing video tutorial making a **Restaurant Picker App** on this channel.
+First I want to thank [Loco Kilo](https://youtu.be/rR3mxe6qcmw?si=OLsjTKqn93q8ifkv), from whom I got the base structure of this project. He has made an amazing video tutorial making a **Restaurant Picker App** on his channel.
 
 # QuikPick
 
