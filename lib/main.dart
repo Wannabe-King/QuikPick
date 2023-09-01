@@ -43,7 +43,7 @@ class _HomePageState extends State<HomePage> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           const Padding(
-            padding: EdgeInsets.only(top: 20.0),
+            padding: EdgeInsets.only(top: 5.0),
             child: Center(
               child: Text(
                 'QuikPick',
@@ -55,7 +55,42 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
           ),
-          if (currentChoice == null) const Text('What are the options??'),
+          const Text(
+            'How it Works?',
+            style: TextStyle(
+              fontSize: 20,
+              fontWeight: FontWeight.w300,
+              color: Colors.black26,
+            ),
+          ),
+          const Text(
+            '1) Enter the option.',
+            style: TextStyle(
+              fontWeight: FontWeight.w300,
+            ),
+          ),
+          const Text(
+            '2) Add it using Add Option button.',
+            style: TextStyle(
+              fontWeight: FontWeight.w300,
+            ),
+          ),
+          const Padding(
+            padding: EdgeInsets.only(bottom: 30.0),
+            child: Text(
+              '3) Click on Pick One button and you are done.',
+              style: TextStyle(
+                fontWeight: FontWeight.w300,
+              ),
+            ),
+          ),
+          if (currentChoice == null)
+            const Text(
+              'What are the options??',
+              style: TextStyle(
+                fontSize: 20,
+              ),
+            ),
           if (currentChoice != null)
             Text(
               choices[currentChoice!],
