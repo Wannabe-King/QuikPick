@@ -1,6 +1,6 @@
-# quikpick
+# QuikPick
 
-A new Flutter project.
+QuikPick is your go-to app for making quick and effortless decisions. When you're faced with choices and can't decide, let QuikPick do the work for you. It's your personal decision-making assistant, always at your fingertips.
 
 ## Getting Started
 
