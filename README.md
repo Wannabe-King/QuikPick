@@ -5,6 +5,14 @@ QuikPick is your go-to app for making quick and effortless decisions. When you'r
 ## Credit
 First I want to thank [Loco Kilo](https://youtu.be/rR3mxe6qcmw?si=OLsjTKqn93q8ifkv), from whom I got the base structure of this project. He has made an amazing video tutorial making a **Restaurant Picker App** on this channel.
 
+## Credit
+- Custom Options by User
+- Reset Button
+- Clear UI
+- App Name and Icon
+- Splash Screen
+- Direction for use of app
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
